@@ -3,16 +3,49 @@
 #An immutable object is an object that is not changeable and its state cannot be modified after it is created.
 #In Python, a string is immutable. You cannot overwrite the values of immutable objects.
 #However, you can assign the variable again.
+
 test='chekking objects'
 id(test)
 #1236701164144
+
 test='changed values'
 id(test)
 #-1236701132080
+
 # as string is an immutable object we can't alter its value but a new value can be assigned 
 # so in this case variable will be allocated to a new memory location.
-# case2 when we assign sam value to another variable to check if address is same of changed
+# case2 when we assign same value to another variable to check if address is same of changed
+
 test2='chekking objects'
 id(test2)
 #1236700565984
+
 # address got changed means a new object will be created
+
+test='abcdef'
+test[::-1]
+# 'fedcba'
+
+# trick to reverese the whole string
+# the last parameter is the increment to fetch the ith element
+# if is positive then count starts from 0 otherwie at the end. as shown below
+
+test[::-3]
+#'fc'
+
+test[::2]
+# 'ace'
+
+test[0:3:]
+'abc'
+
+#[::]- first parameter indicates to start from which position
+#second paramter indicates upto which position (+ start from left, - starts from right)
+#third parameter indicates the increment or decrement
+keep blank and index will be start
+
+•	split() – uses a regex pattern to “split” a given string into a list.
+•	sub() – finds all substrings where the regex pattern matches and then replace them with a different string
+•	subn() – it is similar to sub() and also returns the new string along with the no. of replacements.
+
+
