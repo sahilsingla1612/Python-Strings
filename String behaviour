@@ -48,4 +48,42 @@ keep blank and index will be start
 •	sub() – finds all substrings where the regex pattern matches and then replace them with a different string
 •	subn() – it is similar to sub() and also returns the new string along with the no. of replacements.
 
+#print a string n numbeer times with a specific pattern
+'t ' *9
+#'t t t t t t t t t '
+
+print(*range(1,6))
+#1 2 3 4 5
+
+print(*range(1, int(input())+1), sep='')
+#12
+#123456789101112
+
+#to check a substring in a string
+('@' and '.' in t)
+
+# to find first position of a character in a string
+t.find('.')
+
+#to check if a string or substring is a alphanumeric
+t.find('.')].isalnum()
+
+#to get occurences of a subtring in a string
+t.count('@')
+
+# to check if a string has special characters
+import re
+regex = re.compile('[!#$%^&*()<>?/\|}{~:]') 
+      
+if (regex.search(t) == None):  
+    print("String is accepted") 
+
+else: 
+    print("String is not accepted.") 
+
+
+#filter function to get filtered data based on lambda function
+t=list(range(10))
+l=list(filter(lambda x: x>7, t))
+
 
